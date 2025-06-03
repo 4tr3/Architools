@@ -4,30 +4,65 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: outfit;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 h1{
     text-align: center;
     color: white;
-    font-family: bahnschrift;
     font-weight: 600;
     font-size: 9vw;
-    line-height: 0.55;
+    line-height: 0.69;
     background-color: black;
-    padding-top: 9px;
+    padding-top: 0px;
 }
+
 h2{
     text-align: center;
      color: black;
-     font-family: bahnschrift;
      font-size: 3vw;
 }
+
+.input-big{
+    width: 15vw;
+    height: 3vw;
+    font-size: 3vw;
+    border: 5px solid;
+    border-radius: 0px;
+    margin: 20px;
+    border-color: black;
+    background-color: white;
+    appearance: none;
+    padding: 5px;
+    padding-bottom: 6px;
+    
+}
+.input-big:focus{
+        border-radius: 0px;
+        outline-width: 10px;
+        outline-color: black;
+    }
+
+/* ---------------- Mainpage --------------- */
+
 .symbol-box{
     float: left;
     width: 25%;
     margin-left: 6.25%;
     margin-top: 6.25%;
 }
-#scale-picture:hover{
+#scale-picture:hover,
+#scale-picture:active{
     content: url("pictures/scale_inverted.svg");
 }
+
+/* ---------------- Maßstabsrechner --------------- */
+
